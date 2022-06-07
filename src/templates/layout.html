@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--TITULO DE LA PAGINA EN LA BARRA DE ARRIBA DEL NAVEGADOR -->
+
+<title> Crypto Finanzas</title>
+
+
+<!--LINK PARA IMPORTAR CONTENIDO DE CSS -->
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+
+integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="{{ url_for('static' , filename= 'base.css')   }}">
+
+<link rel="stylesheet" href="{{ url_for('static' , filename= 'contenido.css')   }}">
+
+</head>
+
+<body>
+
+
+    
+<!--PLANTILLA DE CODIGO HTML BUSCADA EN BOOSTRAP EN LA DOCUMENTACION -->
+
+<!--NAVBAR-->
+
+
+
+<header>
+
+<div class="menu">
+
+<img src="file:///C:/Users/ernes/Documents/proyecto%20python/Crypto_Finanzas/imagen/crypto.jpg" alt="" >
+
+
+
+<Nav >
+
+<ul>
+
+<li>
+    
+<a2><span><a href="/bienvenida"> Pagina principal </a></span></a2>
+
+</li>
+
+<li>
+    
+<a2><span><a href="/binance"> Conoce Binance </a></span></a2>
+    
+</li>
+
+<li>
+
+<a2><span><a href="/waves"> Conoce waves </a></span></a2>
+    
+ </li>
+
+
+
+<li> 
+    
+<a2><span><a href="/enciclopedia">Enciclopedia </a></span></a2>
+        
+</li>
+
+<li>
+
+<a2><span><a href="/contacto" > Contactanos </a></span></a2>
+
+</li>
+
+
+
+
+
+</ul>
+
+</Nav>
+
+
+</div>
+
+
+</header>
+
+{% if session['email'] %}
+
+{% else %}
+
+
+{% endif %}
+</ul>
+</div>
+</div>
+</nav>
+
+<!--Conexion de este bloque principal con los otros bloques HTML-->
+
+
+<div class="container p-5">
+    {% block content %}
+    {% endblock %}
+</div>
+
+</body>
+
+</html>
