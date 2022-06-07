@@ -1,1 +1,1 @@
-web: gunicorn finanzas:app
+web: gunicorn finanzas:ap
