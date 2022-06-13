@@ -14,41 +14,39 @@ background: linear-gradient(to right, #3c1053, #ad5389);
 
 width: 900px;
     
-margin: 0 auto;
+margin:auto;
     
   
 }
     
 /*Disenio de la barra superior del menu---------------------------------------------------------------------------------------------------------- */
-    
-nav{
+ 
+.menu nav{
     
 float:right;
 
 }
     
-/* mover de sitio */    
-nav ul li {
-    
-   
+/* mover de sitio */ 
+
+.menu nav ul li {
     
 list-style: none;
-    
-margin-left: 1px;
-        
+       
 padding: 15px 0;
     
 float:left;
     
-margin-right: 1px;
+margin-right: 40px;
 
+margin-left: 1px;
 
 }
 
     
 /*Disenio de la barra superior del menu---------------------------------------------------------------------------------------------------------- */
-    
-nav ul li a {
+  
+.menu nav ul li a {
     
 text-decoration: none;  
     
@@ -68,7 +66,7 @@ border-radius: 20px;
 
     
 /*Disenio de la barra superior del menu---------------------------------------------------------------------------------------------------------- */
-    
+
 header{
     
 text-decoration: none; 
@@ -88,8 +86,6 @@ clear:both;
 content: '';
     
 display: table;
-    
-
     
 }
 
@@ -118,8 +114,6 @@ a2{
     height: 25px;
     
     width: 100%;
-    
-    /*-------------------------------------------------------------------------------------------------------------------------------------------------------*/
     
     cursor:pointer;
         
@@ -181,3 +175,61 @@ a2{
     }
 
 
+
+ul, ol {
+
+    list-style: none;
+}
+
+
+
+.menu li a{
+
+text-decoration: none;   
+
+text-decoration: none;
+
+text-align: center;
+
+}
+
+
+.menu > li {
+
+float:left;
+
+}
+
+/*
+min-width: 200px;*/
+
+
+.menu li ul{
+
+display:none;
+
+position:absolute;
+
+background-color: rgb(24, 24, 24);
+
+text-align: justify;
+
+width: 10%;
+
+margin-left: auto;
+
+margin-right: auto;
+
+top:54px;
+
+left: 590px;
+   
+
+
+}
+
+.menu li:hover >ul {
+
+display:block;
+
+}
