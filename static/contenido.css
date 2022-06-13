@@ -56,7 +56,7 @@ font-family: cursive;
 
 
 
-h2 { 
+.contacto h2 { 
 
 text-align: center;
     
@@ -64,12 +64,9 @@ font-family: cursive;
 
 text-decoration: none;
 
-background: #1c92d2;  
-background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);
-background: linear-gradient(to right, #f2fcfe, #1c92d2); 
+background-color: rgb(24, 24, 24);
 
-color: white;
-
+color: rgb(172, 172, 255);
 
 border-radius: 10px;
 
